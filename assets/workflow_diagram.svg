@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="480" viewBox="0 0 1440 480">
+<rect width="1440" height="480" fill="#f8fafc"/>
+<text x="64" y="58" fill="#0f2744" font-family="Arial,sans-serif" font-size="30" font-weight="700">File-Integrity Verification — workflow</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="60" y="155" width="210" height="130" rx="18" fill="#e7f0fa" stroke="#163b63" stroke-width="3"/><text x="165" y="210" fill="#163b63" font-size="22" font-weight="700">Target folder</text><text x="165" y="244" fill="#34516e" font-size="17">Regular files</text>
+<path d="M270 220 H330" stroke="#163b63" stroke-width="5" fill="none"/><path d="M318 207 L332 220 L318 233" stroke="#163b63" stroke-width="5" fill="none"/>
+<rect x="335" y="155" width="210" height="130" rx="18" fill="#e7f7f4" stroke="#0f766e" stroke-width="3"/><text x="440" y="210" fill="#115e59" font-size="22" font-weight="700">SHA-256</text><text x="440" y="244" fill="#276b66" font-size="17">Chunked hashing</text>
+<path d="M545 220 H605" stroke="#163b63" stroke-width="5" fill="none"/><path d="M593 207 L607 220 L593 233" stroke="#163b63" stroke-width="5" fill="none"/>
+<rect x="610" y="155" width="210" height="130" rx="18" fill="#e7f0fa" stroke="#163b63" stroke-width="3"/><text x="715" y="210" fill="#163b63" font-size="22" font-weight="700">JSON baseline</text><text x="715" y="244" fill="#34516e" font-size="17">Path + digest</text>
+<path d="M820 220 H880" stroke="#163b63" stroke-width="5" fill="none"/><path d="M868 207 L882 220 L868 233" stroke="#163b63" stroke-width="5" fill="none"/>
+<rect x="885" y="155" width="210" height="130" rx="18" fill="#fff7e6" stroke="#b7791f" stroke-width="3"/><text x="990" y="210" fill="#854d0e" font-size="22" font-weight="700">Compare</text><text x="990" y="244" fill="#9a6419" font-size="17">Current vs saved</text>
+<path d="M1095 220 H1145 V112 H1190 M1145 220 V328 H1190" stroke="#163b63" stroke-width="4" fill="none"/>
+<rect x="1190" y="75" width="195" height="75" rx="14" fill="#e6f7ed" stroke="#15803d" stroke-width="3"/><text x="1287" y="121" fill="#166534" font-size="21" font-weight="700">UNCHANGED</text>
+<rect x="1190" y="170" width="195" height="75" rx="14" fill="#fff1f2" stroke="#be123c" stroke-width="3"/><text x="1287" y="216" fill="#9f1239" font-size="21" font-weight="700">MODIFIED</text>
+<rect x="1190" y="265" width="195" height="75" rx="14" fill="#eff6ff" stroke="#1d4ed8" stroke-width="3"/><text x="1287" y="311" fill="#1e40af" font-size="21" font-weight="700">ADDED / DELETED</text>
+</g>
+<text x="64" y="415" fill="#475569" font-family="Arial,sans-serif" font-size="18">The program records differences in a JSON verification report for manual review.</text>
+</svg>

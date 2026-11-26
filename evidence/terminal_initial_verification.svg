@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620">
+<rect width="1280" height="620" fill="#0b1220"/>
+<rect x="24" y="24" width="1232" height="572" rx="18" fill="#111c2e" stroke="#26384f" stroke-width="2"/>
+<rect x="24" y="24" width="1232" height="58" rx="18" fill="#1a2940"/>
+<circle cx="58" cy="53" r="8" fill="#f87171"/><circle cx="88" cy="53" r="8" fill="#fbbf24"/><circle cx="118" cy="53" r="8" fill="#4ade80"/>
+<text x="160" y="60" fill="#cbd5e1" font-size="20" font-family="Arial, sans-serif">Terminal — Initial verification</text>
+<text x="54" y="126" fill="#94a3b8" font-size="18" font-family="Arial, sans-serif">Actual command and captured program output</text>
+<g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace"><text x="54" y="178" fill="#7dd3fc" font-size="21">$ python3 src/integrity_checker.py verify --target sample_data \</text>
+<text x="54" y="212" fill="#dbe4ee" font-size="21">    --baseline examples/baseline.json --report examples/unchanged_report.json</text>
+<text x="54" y="246" fill="#dbe4ee" font-size="21"></text>
+<text x="54" y="280" fill="#dbe4ee" font-size="21">FILE INTEGRITY VERIFICATION</text>
+<text x="54" y="314" fill="#dbe4ee" font-size="21">--------------------------------</text>
+<text x="54" y="348" fill="#dbe4ee" font-size="21">Files compared : 3</text>
+<text x="54" y="382" fill="#dbe4ee" font-size="21">Unchanged      : 3</text>
+<text x="54" y="416" fill="#dbe4ee" font-size="21">Modified       : 0</text>
+<text x="54" y="450" fill="#dbe4ee" font-size="21">Added          : 0</text>
+<text x="54" y="484" fill="#dbe4ee" font-size="21">Deleted        : 0</text>
+<text x="54" y="518" fill="#dbe4ee" font-size="21">Changes found  : 0</text>
+<text x="54" y="552" fill="#dbe4ee" font-size="21">Report saved   : examples/unchanged_report.json</text>
+<text x="54" y="586" fill="#dbe4ee" font-size="21">--------------------------------</text>
+<text x="54" y="620" fill="#dbe4ee" font-size="21">Exit status: 0</text></g>
+</svg>
