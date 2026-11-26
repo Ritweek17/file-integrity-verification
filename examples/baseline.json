@@ -1,0 +1,12 @@
+{
+  "algorithm": "sha256",
+  "created_at_utc": "2026-11-26T06:52:26+00:00",
+  "files": {
+    "daily_log.txt": {"sha256": "8089accbf5844dfef2480086b6c5e80b752efe431d814f8d9af03fac389c0291", "size_bytes": 145},
+    "security_policy.txt": {"sha256": "c9b793a34ee64362fc453feebfb979ee49c9f44e41d98d6637cec2f29a36205d", "size_bytes": 193},
+    "system_inventory.txt": {"sha256": "0d9443fab04fa45992bc0267c88b85a95b1f6e7e95f525c5cf07b9444322458e", "size_bytes": 120}
+  },
+  "schema_version": 1,
+  "skipped_symlinks": [],
+  "target_label": "sample_data"
+}

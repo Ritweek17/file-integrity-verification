@@ -1,0 +1,5 @@
+SYSTEM INVENTORY
+Host: CYBER-LAB-01
+Operating system: Ubuntu 24.04 LTS
+Role: Student testing workstation
+Status: Active

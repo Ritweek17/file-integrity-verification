@@ -1,0 +1,14 @@
+{
+  "student": "Ritweek Dubey",
+  "institution": "ABES Engineering College",
+  "programme": "B.Tech CSE - Second Year",
+  "domain": "Cyber Analytics",
+  "python_version": "Python 3.13.5",
+  "initial": {"ADDED": 0, "DELETED": 0, "MODIFIED": 0, "UNCHANGED": 3, "changes_detected": 0, "total_compared": 3},
+  "controlled": {"ADDED": 1, "DELETED": 1, "MODIFIED": 1, "UNCHANGED": 1, "changes_detected": 3, "total_compared": 4},
+  "unit_tests": 5,
+  "unit_tests_passed": 5,
+  "github_login": "Ritweek17",
+  "github_repository": "https://github.com/Ritweek17/file-integrity-verification",
+  "github_repository_created": true
+}

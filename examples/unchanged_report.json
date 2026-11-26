@@ -1,0 +1,14 @@
+{
+  "algorithm": "sha256",
+  "baseline_file": "baseline.json",
+  "entries": [
+    {"baseline": {"sha256": "8089accbf5844dfef2480086b6c5e80b752efe431d814f8d9af03fac389c0291", "size_bytes": 145}, "current": {"sha256": "8089accbf5844dfef2480086b6c5e80b752efe431d814f8d9af03fac389c0291", "size_bytes": 145}, "path": "daily_log.txt", "status": "UNCHANGED"},
+    {"baseline": {"sha256": "c9b793a34ee64362fc453feebfb979ee49c9f44e41d98d6637cec2f29a36205d", "size_bytes": 193}, "current": {"sha256": "c9b793a34ee64362fc453feebfb979ee49c9f44e41d98d6637cec2f29a36205d", "size_bytes": 193}, "path": "security_policy.txt", "status": "UNCHANGED"},
+    {"baseline": {"sha256": "0d9443fab04fa45992bc0267c88b85a95b1f6e7e95f525c5cf07b9444322458e", "size_bytes": 120}, "current": {"sha256": "0d9443fab04fa45992bc0267c88b85a95b1f6e7e95f525c5cf07b9444322458e", "size_bytes": 120}, "path": "system_inventory.txt", "status": "UNCHANGED"}
+  ],
+  "generated_at_utc": "2026-11-26T06:52:26+00:00",
+  "interpretation": "No differences were detected against the saved baseline.",
+  "skipped_symlinks": [],
+  "summary": {"ADDED": 0, "DELETED": 0, "MODIFIED": 0, "UNCHANGED": 3, "changes_detected": 0, "total_compared": 3},
+  "target_label": "sample_data"
+}

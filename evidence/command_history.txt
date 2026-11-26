@@ -1,0 +1,51 @@
+Environment: Python 3.13.5
+Working directory: File_Integrity_Verification_Repo
+
+$ python3 src/integrity_checker.py init --target sample_data --baseline examples/baseline.json
+Baseline created successfully.
+Files recorded : 3
+Algorithm      : SHA256
+Saved to       : examples/baseline.json
+[exit status: 0]
+
+$ python3 src/integrity_checker.py verify --target sample_data --baseline examples/baseline.json --report examples/unchanged_report.json
+
+FILE INTEGRITY VERIFICATION
+--------------------------------
+Files compared : 3
+Unchanged      : 3
+Modified       : 0
+Added          : 0
+Deleted        : 0
+Changes found  : 0
+Report saved   : examples/unchanged_report.json
+--------------------------------
+[exit status: 0]
+
+$ python3 src/integrity_checker.py verify --target examples/controlled_workspace --baseline examples/controlled_baseline.json --report examples/controlled_change_report.json
+
+FILE INTEGRITY VERIFICATION
+--------------------------------
+Files compared : 4
+Unchanged      : 1
+Modified       : 1
+Added          : 1
+Deleted        : 1
+Changes found  : 3
+Report saved   : examples/controlled_change_report.json
+--------------------------------
+[exit status: 1]
+
+$ python3 -m unittest discover -s tests -v
+
+test_added_file (test_integrity_checker.FileIntegrityTests.test_added_file) ... ok
+test_deleted_file (test_integrity_checker.FileIntegrityTests.test_deleted_file) ... ok
+test_modified_file (test_integrity_checker.FileIntegrityTests.test_modified_file) ... ok
+test_report_is_valid_json (test_integrity_checker.FileIntegrityTests.test_report_is_valid_json) ... ok
+test_unchanged_files (test_integrity_checker.FileIntegrityTests.test_unchanged_files) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+OK
+[exit status: 0]

@@ -1,0 +1,4 @@
+LAB FILE HANDLING POLICY
+1. Keep a trusted copy of important configuration files.
+2. Review changes before accepting a new baseline.
+3. Store verification reports outside the monitored folder.

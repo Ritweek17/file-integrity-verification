@@ -1,0 +1,15 @@
+{
+  "algorithm": "sha256",
+  "baseline_file": "controlled_baseline.json",
+  "entries": [
+    {"baseline": {"sha256": "8089accbf5844dfef2480086b6c5e80b752efe431d814f8d9af03fac389c0291", "size_bytes": 145}, "current": {"sha256": "3ef416b8db42d46ec0b3ab9ce21346f5a39e0a306e583f82620aa819558321b7", "size_bytes": 194}, "path": "daily_log.txt", "status": "MODIFIED"},
+    {"baseline": null, "current": {"sha256": "5fbbb37cf301ffa86412815459d9de78fbbea0ba990e546b375f25f60bc71f11", "size_bytes": 74}, "path": "new_test_file.txt", "status": "ADDED"},
+    {"baseline": {"sha256": "c9b793a34ee64362fc453feebfb979ee49c9f44e41d98d6637cec2f29a36205d", "size_bytes": 193}, "current": {"sha256": "c9b793a34ee64362fc453feebfb979ee49c9f44e41d98d6637cec2f29a36205d", "size_bytes": 193}, "path": "security_policy.txt", "status": "UNCHANGED"},
+    {"baseline": {"sha256": "0d9443fab04fa45992bc0267c88b85a95b1f6e7e95f525c5cf07b9444322458e", "size_bytes": 120}, "current": null, "path": "system_inventory.txt", "status": "DELETED"}
+  ],
+  "generated_at_utc": "2026-11-26T06:52:28+00:00",
+  "interpretation": "Differences were detected. Review each changed path and confirm whether it was expected.",
+  "skipped_symlinks": [],
+  "summary": {"ADDED": 1, "DELETED": 1, "MODIFIED": 1, "UNCHANGED": 1, "changes_detected": 3, "total_compared": 4},
+  "target_label": "controlled_workspace"
+}

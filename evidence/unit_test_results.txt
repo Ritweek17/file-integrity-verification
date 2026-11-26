@@ -1,0 +1,10 @@
+test_added_file (test_integrity_checker.FileIntegrityTests.test_added_file) ... ok
+test_deleted_file (test_integrity_checker.FileIntegrityTests.test_deleted_file) ... ok
+test_modified_file (test_integrity_checker.FileIntegrityTests.test_modified_file) ... ok
+test_report_is_valid_json (test_integrity_checker.FileIntegrityTests.test_report_is_valid_json) ... ok
+test_unchanged_files (test_integrity_checker.FileIntegrityTests.test_unchanged_files) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+OK
