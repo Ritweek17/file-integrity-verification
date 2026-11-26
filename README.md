@@ -3,44 +3,63 @@
 **Student:** Ritweek Dubey  
 **Institution:** ABES Engineering College  
 **Programme:** B.Tech, Computer Science and Engineering — Second Year  
-**Domain:** Cyber Analytics
+**Domain:** Cyber Analytics  
+**Selected assignment:** Project 14 — File-Integrity Verification
 
-A Python command-line tool that creates a SHA-256 baseline for a local directory and compares later scans. It reports files as `UNCHANGED`, `MODIFIED`, `ADDED`, or `DELETED`.
+A Python command-line utility that creates a SHA-256 baseline for a local folder and compares later scans. It classifies files as `UNCHANGED`, `MODIFIED`, `ADDED`, or `DELETED`, then saves a JSON report.
+
+## Repository structure
+
+```text
+.
+├── src/            # SHA-256 inventory and verification CLI
+├── tests/          # Automated unit tests
+├── sample_data/    # Harmless demonstration files
+├── examples/       # Reference baselines and JSON reports
+├── evidence/       # Command history and test results
+├── docs/           # Project report
+├── README.md
+├── GITHUB_SETUP.md
+├── LICENSE
+└── requirements.txt
+```
 
 ## Requirements
+
 - Python 3.9 or newer
-- Standard library only; no third-party packages required
+- Python standard library only; no third-party packages required
+- Use only on folders you own or are authorised to monitor
 
 ## Run
 
+From the repository root:
+
 ```bash
 python3 src/integrity_checker.py init --target sample_data --baseline examples/baseline.json
-python3 src/integrity_checker.py verify --target sample_data --baseline examples/baseline.json --report examples/verification_report.json
+python3 src/integrity_checker.py verify --target sample_data --baseline examples/baseline.json --report examples/unchanged_report.json
 ```
 
-Run the tests with:
+The included sample folder matches its baseline: three files are unchanged and no differences are detected.
+
+## Run tests
 
 ```bash
 python3 -m unittest discover -s tests -v
 ```
 
-The included sample folder is designed to match its baseline. Controlled-change evidence in `evidence/` documents a separate demonstration with one modified, one added, and one deleted file.
+Five tests cover unchanged, modified, added, and deleted files, as well as JSON report validity.
 
-## Structure
+## Controlled demonstration
 
-```text
-src/          CLI implementation
- tests/       automated tests
-sample_data/  harmless sample files
-examples/     reference baselines and reports
-evidence/     terminal captures and test results
-assets/       project illustrations
- docs/        academic report (PDF and DOCX)
-```
+The recorded controlled scenario contains one modified file, one added file, one deleted file, and one unchanged file. The original `sample_data/` folder remains unchanged. See `evidence/command_history.txt` and `examples/controlled_change_report.json`.
 
-## Interpretation
-A verification exit code of `1` means differences were found; it does not, by itself, prove malicious activity. Protect the baseline separately from the monitored directory.
+An exit code of `1` means differences were found; it does not, by itself, prove malicious activity.
 
-## Student
-- GitHub: https://github.com/Ritweek17
-- Repository: https://github.com/Ritweek17/file-integrity-verification
+## Documentation
+
+Read the report in [docs/Project_Report.md](docs/Project_Report.md). The repository guide is in [GITHUB_SETUP.md](GITHUB_SETUP.md).
+
+## Student and repository
+
+- GitHub profile: https://github.com/Ritweek17
+- Project repository: https://github.com/Ritweek17/file-integrity-verification
